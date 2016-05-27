@@ -11,16 +11,12 @@ function getRandomPhoneNumber(rnd) {
   return _.pad(x, 10, '0');
 }
 
-console.log(getRandomPhoneNumber(seedrandom('seed')));
-var getRandomList = function(seed, count) {
+var getRandomList = function(seed, size) {
   var rng = seedrandom(seed);
-  return _.map(_.range(count), _.partial(getRandomPhoneNumber, rng))
+  return _.map(
+    _.range(size),
+    _.partial(getRandomPhoneNumber, rng)
+  )
 }
 
-assert.deepEqual(
-    getRandomList('seed', 1000000),
-    getRandomList('seed', 1000000)
-)
-console.log(
-    getRandomList('seed', 10)
-)
+module.exports = getRandomList
