@@ -1,0 +1,24 @@
+{
+  "name": "count-challenge-server",
+  "version": "1.0.0",
+  "description": "a server which implements counts challenge. Should be deployed with docker on Azure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kharandziuk/count-challenge-server.git"
+  },
+  "author": "Max Kharandziuk <max.kharandziuk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kharandziuk/count-challenge-server/issues"
+  },
+  "homepage": "https://github.com/kharandziuk/count-challenge-server#readme",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "seedrandom": "^2.4.2"
+  }
+}
